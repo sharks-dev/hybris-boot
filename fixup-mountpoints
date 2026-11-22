@@ -2495,6 +2495,56 @@ case "$DEVICE" in
             -e 's block/bootdevice/by-name/xblbak sdc2 ' \
             "$@"
         ;;
+
+    "f21pro")
+        sed -i \
+            -e 's block/bootdevice/by-name/boot_para sda1 ' \
+            -e 's block/bootdevice/by-name/para sda2 ' \
+            -e 's block/bootdevice/by-name/expdb sda3 ' \
+            -e 's block/bootdevice/by-name/frp sda4 ' \
+            -e 's block/bootdevice/by-name/nvcfg sda5 ' \
+            -e 's block/bootdevice/by-name/nvdata sda6 ' \
+            -e 's block/bootdevice/by-name/md_udc sda7 ' \
+            -e 's block/bootdevice/by-name/metadata sda8 ' \
+            -e 's block/bootdevice/by-name/protect1 sda9 ' \
+            -e 's block/bootdevice/by-name/protect2 sda10 ' \
+            -e 's block/bootdevice/by-name/seccfg sda11 ' \
+            -e 's block/bootdevice/by-name/sec1 sda12 ' \
+            -e 's block/bootdevice/by-name/proinfo sda13 ' \
+            -e 's block/bootdevice/by-name/nvram sda14 ' \
+            -e 's block/bootdevice/by-name/logo sda15 ' \
+            -e 's block/bootdevice/by-name/md1img_a sda16 ' \
+            -e 's block/bootdevice/by-name/spmfw_a sda17 ' \
+            -e 's block/bootdevice/by-name/scp_a sda18 ' \
+            -e 's block/bootdevice/by-name/sspm_a sda19 ' \
+            -e 's block/bootdevice/by-name/gz_a sda20 ' \
+            -e 's block/bootdevice/by-name/lk_a sda21 ' \
+            -e 's block/bootdevice/by-name/boot_a sda22 ' \
+            -e 's block/bootdevice/by-name/vendor_boot_a sda23 ' \
+            -e 's block/bootdevice/by-name/dtbo_a sda24 ' \
+            -e 's block/bootdevice/by-name/tee_a sda25 ' \
+            -e 's block/bootdevice/by-name/vbmeta_a sda26 ' \
+            -e 's block/bootdevice/by-name/vbmeta_system_a sda27 ' \
+            -e 's block/bootdevice/by-name/vbmeta_vendor_a sda28 ' \
+            -e 's block/bootdevice/by-name/md1img_b sda29 ' \
+            -e 's block/bootdevice/by-name/spmfw_b sda30 ' \
+            -e 's block/bootdevice/by-name/scp_b sda31 ' \
+            -e 's block/bootdevice/by-name/sspm_b sda32 ' \
+            -e 's block/bootdevice/by-name/gz_b sda33 ' \
+            -e 's block/bootdevice/by-name/lk_b  sda34 ' \
+            -e 's block/bootdevice/by-name/boot_b sda35 ' \
+            -e 's block/bootdevice/by-name/vendor_boot_b sda36 ' \
+            -e 's block/bootdevice/by-name/dtbo_b sda37 ' \
+            -e 's block/bootdevice/by-name/tee_b sda38 ' \
+            -e 's block/bootdevice/by-name/super sda39 ' \
+            -e 's block/bootdevice/by-name/vbmeta_b sda40 ' \
+            -e 's block/bootdevice/by-name/vbmeta_system_b sda41 ' \
+            -e 's block/bootdevice/by-name/vbmeta_vendor_b sda42 ' \
+            -e 's block/bootdevice/by-name/userdata sda43 ' \
+            -e 's block/bootdevice/by-name/otp sda44 ' \
+            -e 's block/bootdevice/by-name/flashinfo sda45 ' \
+            "$@"
+        ;;
     *)
         cat <<EOF
 
